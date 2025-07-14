@@ -47,14 +47,14 @@ window.addEventListener("load", async () => {
 const elementProfileAdmin = (data) => {
   const firstLetter = data.username.slice(0, 1);
   return `
-  <a href="pages/dashboardAdmin/adminOverview.html">${firstLetter.toUpperCase()}</a>
+  <a href="/pages/dashboardAdmin/adminOverview.html">${firstLetter.toUpperCase()}</a>
   `;
 };
 
 const elementProfileUser = (data) => {
   const firstLetter = data.fullname.slice(0, 1);
   return `
-      <a href="pages/dashboardUser/dashboardUser.html">${firstLetter.toUpperCase()}</a>
+      <a href="/pages/dashboardUser/dashboardUser.html">${firstLetter.toUpperCase()}</a>
       `;
 };
 

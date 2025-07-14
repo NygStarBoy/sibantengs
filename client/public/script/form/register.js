@@ -75,6 +75,7 @@ form.addEventListener("submit", async (e) => {
       const error = await request.text();
       console.log(error);
       alert(error);
+      return
     }
 
     const response = await request.json();
@@ -86,7 +87,7 @@ form.addEventListener("submit", async (e) => {
       modalSucces.classList.remove("show-modal-succes");
     }, 800);
     setTimeout(() => {
-      window.location.href = "../../pages/form/login.html";
+      window.location.href = "/pages/form/login.html";
     }, 1000);
   } catch (err) {
     console.error(err);

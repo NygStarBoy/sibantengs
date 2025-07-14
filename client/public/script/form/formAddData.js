@@ -68,7 +68,7 @@ form.addEventListener("submit", async (e) => {
       modalSucces.classList.remove("show-modal-succes");
     }, 800);
     setTimeout(() => {
-      window.location.href = "../../pages/dashboardAdmin/adminManage.html";
+      window.location.href = "/pages/dashboardAdmin/adminManage.html";
     }, 1000);
   } catch (err) {
     console.error(err);
